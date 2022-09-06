@@ -6,5 +6,7 @@ function asset($url){
 }
 ?>
 
-<link rel="stylesheet" href="<?= asset("styles.css") ?>">
+
+<script defer href="<?= asset("js/index.js") ?>"></script>
+<link rel="stylesheet" href="<?= asset("css/styles.css") ?>">
 <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
