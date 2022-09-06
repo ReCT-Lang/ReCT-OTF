@@ -6,18 +6,17 @@
 
 <p>Paste or upload a file</p>
 
-<input type="file"/>
-
-<form action="src/execute.php" method="post">
+<form action="index.php" method="post">
+    <input type="file" id="file" name="file"/>
     <label>
-        <textarea id="code" name="code" rows="50" cols="100"></textarea>
+        <textarea id="code" name="code" rows="50" cols="100">
+            <?php
+                echo $_POST["file"];
+            ?>
+        </textarea>
     </label>
     <button type="submit">Execute</button>
 </form>
-
-<?php
-/*echo "Hello World!";
-*/?>
 
 </body>
 </html>
